@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.imgur.com/uS84DyZ.png"/>
+    <title>DDOS STRENGTH CHECKER, made by kamalyaka#0646</title>
+</head>
+<body>
+    <!-- 
+        If you see this then i am very thankful you downloaded this simple tool! 
+        Your support truly means the world to me, thanks for using this!
+        - kamalyaka 2021 February 8, 5:36 PM
+    -->
+    <style>
+        body{
+            background-color: rgb(41, 41, 41);
+            color: rgb(1, 158, 1);
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+        }
+    </style>
+    <h1>Good Day! this site has been visited <span id="visits"></span> time(s)!</h1>
+    <h3>(Requests made to the root page)</h3>
+    <script>
+        fetch(window.location.href + "vct").then((response) => response.json()).then((data) => {
+            document.getElementById("visits").innerHTML = data.visits;
+        })
+    </script>
+</body>
+</html>
