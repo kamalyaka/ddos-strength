@@ -1,4 +1,4 @@
-# ddos strength checker
+# DDoS Strength Checker/Monitor
 ###  🌐This is a simple web server that displays how many times it was visited on the root page. It allows you to test out DoS and DDoS tools to see how many requests they have made to the server.
 ## Tool description
 ### This is a NodeJS webserver [here is a download link to NodeJS](https://nodejs.org/en/), that displays the number of requests made to the root URL (/) on the home page. This number can be used to measure how many requests a DDOS tool is capable of sending.
